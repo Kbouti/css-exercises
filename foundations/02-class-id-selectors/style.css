@@ -8,12 +8,13 @@ font-family: Verdana, "DejaVu Sans", sans-serif;
     font-size: 36px;
 }
 
-.triple {
+.adjust-font-size {
     font-size: 24px;
 }
 
 #quattro {
     background-color: rgb(38,226,88);
-    font-size: 24px;
     font-weight: bold;
 }
+
+/*I changed solution to reuse adjust-font-size class instead of using size rules for both number 3 and 4. This helps reduce duplicate code.*/
