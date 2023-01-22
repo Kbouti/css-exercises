@@ -1,0 +1,19 @@
+.odd {
+background-color: rgb(210,44,155);
+font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#deuce {
+    color:rgb(19,25,191);
+    font-size: 36px;
+}
+
+.triple {
+    font-size: 24px;
+}
+
+#quattro {
+    background-color: rgb(38,226,88);
+    font-size: 24px;
+    font-weight: bold;
+}
