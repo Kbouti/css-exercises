@@ -4,3 +4,11 @@
     size: 20px;
     text-align: center;
 }
+
+/* Could have also used:
+
+div p
+div .text
+.container p
+
+*/
