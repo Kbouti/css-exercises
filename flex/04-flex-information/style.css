@@ -24,3 +24,26 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.title {
+  text-align: center;
+  margin-bottom:32px;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.content {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+}
+
+/* Could have used body {text-align: center} instead of using it twice */
+
+/* Also didn't need to flex the .content container, the direction already would have been column and the text would have centered with body >text-align: center */
