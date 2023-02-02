@@ -4,8 +4,11 @@
   width: 400px;
   height: 300px;
   display:flex;
-  justify-content: center;
+  justify-content: end;
   align-items: end;
+
+  /*moving this again to play with git */
+  
 
 }
 
