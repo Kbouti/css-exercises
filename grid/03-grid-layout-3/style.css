@@ -37,6 +37,11 @@ ul {
   grid-area: header;
   display:grid;
   grid-template:1fr / 1fr 4fr;
+  align-items:center;
+
+}
+.menu {
+  display:grid;
 }
 
 .menu ul {
