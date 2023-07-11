@@ -3,8 +3,19 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   text-align: center;
+  display:grid;
+  grid-gap:3px;
+  grid-template-areas: 
+  "header header"
+  "sidebar nav"
+  "sidebar article"
+  "footer footer";
 }
 
 .container div {
