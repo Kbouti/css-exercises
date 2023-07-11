@@ -11,13 +11,17 @@ ul {
   text-align: center;
   display:grid;
   grid-gap:3px;
+
+  grid-template:1fr 1fr 5fr 1fr / 1fr 4fr;
+
   grid-template-areas: 
   "header header"
   "sidebar nav"
   "sidebar article"
   "footer footer";
 
-  /* grid-template:80px 50px 1fr 50px / 1fr 3fr; */
+  
+
 }
 
 .container div {
@@ -110,6 +114,7 @@ ul {
 .footer {
   background-color: #393f4d;
   grid-area:footer;
+  /* padding: 0px; */
 }
 
 .footer p {
