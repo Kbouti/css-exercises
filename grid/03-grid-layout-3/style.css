@@ -35,6 +35,13 @@ ul {
 .header {
   background-color: #393f4d;
   grid-area: header;
+  display:grid;
+  grid-template:1fr / 1fr 4fr;
+}
+
+.menu ul {
+  display:grid;
+  grid-template: 1fr/ repeat(4, 1fr);
 }
 
 .header div {
