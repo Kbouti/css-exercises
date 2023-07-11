@@ -12,7 +12,7 @@ ul {
   display:grid;
   grid-gap:3px;
 
-  grid-template:1fr 1fr 5fr 1fr / 1fr 4fr;
+  grid-template:minmax(80px, 150px) minmax(50px, 100px) 1fr minmax(50px, 100px) / 1fr 4fr;
 
   grid-template-areas: 
   "header header"
@@ -70,6 +70,15 @@ ul {
 .nav {
   background-color: #FF7755;
   grid-area:nav;
+  display:grid;
+}
+
+.nav ul {
+  display:grid;
+  grid-template:1fr/ repeat(3, 1fr);
+  justify-items:center;
+  align-items:center;
+  
 }
 
 .nav ul li {
