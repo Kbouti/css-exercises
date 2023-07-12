@@ -12,7 +12,7 @@ ul {
   display:grid;
   grid-gap:3px;
 
-  grid-template:minmax(80px, 150px) minmax(50px, 100px) 1fr minmax(50px, 100px) / 1fr 4fr;
+  grid-template:80px 50px 1fr 50px/ 1fr 4fr;
 
   grid-template-areas: 
   "header header"
@@ -53,6 +53,11 @@ ul {
   padding: 0px;
 }
 
+.sidebar {
+  display:grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  grid-gap:50px;
+}
 .menu ul,
 .menu li {
   font-size: 16px;
@@ -61,6 +66,7 @@ ul {
 .sidebar {
   background-color: #FF7755;
   grid-area:sidebar;
+  display:grid;
 }
 
 .sidebar .photo {
@@ -104,7 +110,9 @@ ul {
 
   display:grid;
   grid-gap:15px;
+  /* overflow:auto; */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit,minmax(100px, 200px));
 }
 
 .article p {
@@ -113,7 +121,6 @@ ul {
   color: white;
   text-align: left;
 
-  overflow:auto;
 }
 
 .article .card {
