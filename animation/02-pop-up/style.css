@@ -35,11 +35,12 @@ button {
   top: 50%;
   left: 50%;
   transform-origin: center;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   pointer-events: none;
   opacity: 0%;
   text-align: center;
 }
+
 .popup-modal p {
   margin-bottom: 24px
 }
@@ -61,3 +62,14 @@ button {
   opacity: 30%;
 }
 
+/* *************************************************************** */
+/* My answer: */
+
+.popup-modal {
+  transform: translate(-50%, -100%);
+  transition-duration: .5s;
+}
+
+.popup-modal.show {
+  transform:translate(-50%, -50%);
+}
