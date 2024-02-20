@@ -18,7 +18,7 @@
   margin: 0;
   background-color: rgb(99, 97, 97);
 
-  display: none;
+  /* display: none; */
 }
 
 ul.dropdown-menu li:hover {
@@ -30,3 +30,21 @@ ul.dropdown-menu li:hover {
 }
 
 
+
+/*  *************************************************** */
+/* My attempt: */
+
+.dropdown-menu{
+  opacity:30%;
+  /* transform: translate(0%, -20%); */
+   transform-origin:top center;
+
+  transition: scale 1s;
+  transform: scale(1, 0)
+
+}
+
+.visible {
+  transform: scale(1, 1)
+
+}
