@@ -16,10 +16,31 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+}
+
+
+/* ************************************************** */
+/* MY SOLUTION: */
+
+button {
   transition-duration: .5s;
+
 }
 
 button:hover{
 transform:scale(1.5, 1.5);
   /* cursor:pointer; */
 }
+
+
+/* ************************************************** */
+/* THEIR SOLUTION: */
+/* They used a shorthand declaration and specified ease-in-out */
+
+/* button {
+  transition: transform .3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.2)
+} */
