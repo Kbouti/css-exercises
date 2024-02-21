@@ -18,7 +18,7 @@
   margin: 0;
   background-color: rgb(99, 97, 97);
 
-  /* display: none; */
+  display: none;
 }
 
 ul.dropdown-menu li:hover {
@@ -32,27 +32,24 @@ ul.dropdown-menu li:hover {
 /*  *************************************************** */
 /* My attempt: */
 
-.dropdown-menu {
-  opacity: 30%;
-
+.visible {
   animation-duration: 1s;
   animation-name: drop-down;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-direction: alternate;
+
 }
 
 @keyframes drop-down {
-  from {
-    /* collapsed into header */
+  0% {
+    height: 50px;
   }
-
-  80% {
-    /* Alittle extra long */
+  70% {
+    height: 300px;
   }
-
-  to {
-    /* expanded to regular size */
+  100%{
+    height: 250px;
   }
-}
+} 
 
-/*  We need an animation not a transition */
+/* I think I need to be tranitioning scale, not height. But this is good progress  */
