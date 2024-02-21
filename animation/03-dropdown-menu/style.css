@@ -32,24 +32,23 @@ ul.dropdown-menu li:hover {
 /*  *************************************************** */
 /* My attempt: */
 
+
 .visible {
-  animation-duration: 1s;
+  animation-duration: 1.2s;
   animation-name: drop-down;
   animation-iteration-count: 1;
   animation-direction: alternate;
-
+  transform-origin: top center;
 }
-
 @keyframes drop-down {
   0% {
-    height: 50px;
+    transform: scaleY(0%);
   }
   70% {
-    height: 300px;
+    transform: scaleY(120%);
   }
   100%{
-    height: 250px;
+    transform: scaleY(100%);
   }
 } 
 
-/* I think I need to be tranitioning scale, not height. But this is good progress  */
