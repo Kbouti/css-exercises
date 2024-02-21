@@ -29,22 +29,30 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 
-
-
 /*  *************************************************** */
 /* My attempt: */
 
-.dropdown-menu{
-  opacity:30%;
-  /* transform: translate(0%, -20%); */
-   transform-origin:top center;
+.dropdown-menu {
+  opacity: 30%;
 
-  transition: scale 1s;
-  transform: scale(1, 0)
-
+  animation-duration: 1s;
+  animation-name: drop-down;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-.visible {
-  transform: scale(1, 1)
+@keyframes drop-down {
+  from {
+    /* collapsed into header */
+  }
 
+  80% {
+    /* Alittle extra long */
+  }
+
+  to {
+    /* expanded to regular size */
+  }
 }
+
+/*  We need an animation not a transition */
